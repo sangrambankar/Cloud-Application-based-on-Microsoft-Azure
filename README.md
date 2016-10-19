@@ -1,0 +1,2 @@
+# Cloud-Application-based-on-Microsoft-Azure
+Designed and implemented a web based Instagram type app with an added functionality of uploading a text file as well in which the user can upload his/her images or any grocery list or any other text files and add caption to them and can view and comment on other users images. Also, the user could search his/her files based on few criteria’s. For improved performance, Java Database Objects was used to store the files.

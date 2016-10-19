@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>FinalAssign</display-name>
+  <welcome-file-list>
+    <welcome-file>JSPPages/Login.jsp</welcome-file>
+  </welcome-file-list>
+  <session-config>
+    <session-timeout>60</session-timeout>
+  </session-config>
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.cloud.assign10.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/loginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>DownloadBlob</servlet-name>
+    <servlet-class>com.cloud.assign10.DownloadBlob</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DownloadBlob</servlet-name>
+    <url-pattern>/downloadServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>DeleteTodo</servlet-name>
+    <servlet-class>com.cloud.assign10.DeleteTodo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteTodo</servlet-name>
+    <url-pattern>/deletetodoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>com.cloud.assign10.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/logoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>RegistrationServlet</servlet-name>
+    <servlet-class>com.cloud.assign10.RegistrationServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegistrationServlet</servlet-name>
+    <url-pattern>/registrationServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>TodoServlet</servlet-name>
+    <servlet-class>com.cloud.assign10.TodoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TodoServlet</servlet-name>
+    <url-pattern>/todoServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>EditTodoServlet</servlet-name>
+    <servlet-class>com.cloud.assign10.EditTodoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EditTodoServlet</servlet-name>
+    <url-pattern>/edittodoServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>SaveTextServlet</servlet-name>
+    <servlet-class>com.cloud.assign10.SaveTextServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SaveTextServlet</servlet-name>
+    <url-pattern>/saveText</url-pattern>
+  </servlet-mapping>
+  
+  
+</web-app>
